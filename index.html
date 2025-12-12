@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- AUTOPLAY MUSIC -->
+    <audio id="bg-music" src="music/lagu.mp3" preload="auto" loop></audio>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">My Portfolio<span></span></h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Projek</a></li>
+            </ul>
+
+            <!-- ACTION BUTTONS (DARK MODE + MUSIC) -->
+            <div class="actions">
+                <button id="musicToggle" class="music-btn">🔇</button>
+                <button id="themeToggle" class="toggle-btn">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <h1>Halo, Saya <span>Rifqi Aditya Febrian</span></h1>
+            <p>Frontend & Laravel Developer</p>
+
+            <div class="hero-btn">
+                <a href="#projects" class="btn">Lihat Projek</a>
+                <a href="#about" class="btn-outline">Tentang Saya</a>
+            </div>
+
+            <!-- INSTAGRAM -->
+            <div class="socials">
+                <a href="https://instagram.com/im.rifqii" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about reveal">
+        <h2>Tentang Saya</h2>
+<p>
+    Saya mulai mempelajari dunia pemrograman sejak tahun 2024 dan memilih jurusan Rekayasa Perangkat Lunak 
+    untuk memperdalam pengetahuan saya. Saat ini saya lebih berfokus pada pengembangan antarmuka (Frontend) 
+    dan pengembangan aplikasi berbasis Laravel. Saya menikmati membuat tampilan yang modern, responsif, 
+    dan nyaman digunakan, serta membangun sistem yang stabil dan terstruktur.
+</p>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects reveal">
+        <h2>Projek Saya</h2>
+
+<div class="project-grid">
+
+    <div class="project-card">
+        <img src="images/bahan 1.png" alt="Engineering Dashboard">
+        <h3>Jasa Pembuatan Website – Laravel</h3>
+        <p>Website layanan pembuatan website berbasis Laravel yang memiliki dua role utama: Admin dan User.
+Fitur lengkap CRUD, manajemen layanan, serta autentikasi yang terhubung ke database MySQL (phpMyAdmin).
+Dibangun dengan fokus pada struktur yang rapi, keamanan dasar, dan alur kerja yang profesional.</p>
+    </div>
+
+    <div class="project-card">
+        <img src="images/bahan 2.png" alt="Portfolio 9:16">
+        <h3>Parking App – Laravel</h3>
+        <p>Aplikasi parkir berbasis Laravel yang terhubung langsung ke database MySQL, mendukung pencatatan kendaraan masuk/keluar, tarif, dan riwayat transaksi.
+Dirancang dengan struktur backend yang bersih, serta fitur CRUD yang mempermudah pengelolaan data parkir.</p>
+    </div>
+
+    <div class="project-card">
+        <img src="images/bahan 3.png" alt="UI Components">
+        <h3>Mini Bank App – Python Tkinter</h3>
+        <p>Aplikasi perbankan sederhana menggunakan Python Tkinter dengan fitur seperti pembuatan akun, penyetoran, penarikan, dan pengecekan saldo.
+Menggunakan penyimpanan data dasar serta antarmuka GUI yang ramah pengguna untuk mensimulasikan alur sistem bank mini.</p>
+    </div>
+
+</div>
+
+    </section>
+
+    <!-- BACK TO TOP -->
+    <button id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
